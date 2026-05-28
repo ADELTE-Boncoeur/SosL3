@@ -11,7 +11,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
     "vue": "beta",
-    "vue-router": "^5.0.4"
+    "vue-router": "^5.0.7"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.0",

@@ -1,22 +1,74 @@
-<script setup>
-import logo from '../assets/sos-logo.jpg'
-</script>
-
 <template>
-<nav class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 text-slate-900">
-  <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-    <div class="flex items-center gap-3">
-      <img :src="logo" class="w-11 h-11 rounded-full border border-slate-300 shadow-sm" />
-      <h1 class="text-xl md:text-2xl font-bold">SOS Schoolaa</h1>
+  <nav class="sticky top-0 z-50 border-b border-white/20 bg-green-700 shadow-lg">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 py-4">
+  <a href="#" class="flex items-center gap-3">
+    <img src="../assets/images/logos.png" alt="Tembera logo" class="h-14 w-14 rounded-full object-cover" />
+    <div>
+      <h1 class="text-lg font-bold text-white">Rwanda Travel</h1>
     </div>
+  </a>
 
-    <div class="hidden md:flex gap-6 text-sm font-medium">
-      <a href="#home" class="hover:text-sky-600 transition">Home</a>
-      <a href="#about" class="hover:text-sky-600 transition">About</a>
-      <a href="#gallery" class="hover:text-sky-600 transition">Gallery</a>
-      <a href="#teachers" class="hover:text-sky-600 transition">Teachers</a>
-      <a href="#contact" class="hover:text-sky-600 transition">Contact</a>
-    </div>
+  <ul class="flex items-center gap-12 text-sm font-bold uppercase tracking-widest text-white">
+
+  <li>
+    <RouterLink to="/" class="nav-link hover:text-yellow-300 hover:bg-green-600/50 px-3 py-2 rounded-lg transition">
+      Home
+    </RouterLink>
+  </li>
+
+  <li>
+    <RouterLink to="/about" class="nav-link hover:text-yellow-300 hover:bg-green-600/50 px-3 py-2 rounded-lg transition">
+      About
+    </RouterLink>
+  </li>
+
+  <li class="relative group">
+    <a href="#" class="hover:text-yellow-300 px-3 py-2 rounded-lg">
+      Gallery <span>▾</span>
+    </a>
+    <ul class="invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute bg-white text-green-900 rounded shadow w-48 top-full left-0 z-50 transition">
+      <li><RouterLink to="/gallery" class="block px-4 py-2 hover:bg-green-200">Gallery Home</RouterLink></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-green-200">Photos</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-green-200">Videos</a></li>
+    </ul>
+  </li>
+
+  <li class="relative group">
+    <a href="#" class="hover:text-yellow-300 px-3 py-2 rounded-lg">
+      Destinations <span>▾</span>
+    </a>
+    <ul class="invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute bg-white text-green-900 rounded shadow w-52 top-full left-0 z-50 transition">
+      <li><RouterLink to="/destinations/kigali-city" class="block px-4 py-2 hover:bg-green-200">Kigali</RouterLink></li>
+      <li><RouterLink to="/destinations/southern-province" class="block px-4 py-2 hover:bg-green-200">South</RouterLink></li>
+      <li><RouterLink to="/destinations/western-province" class="block px-4 py-2 hover:bg-green-200">West</RouterLink></li>
+      <li><RouterLink to="/destinations/northern-province" class="block px-4 py-2 hover:bg-green-200">North</RouterLink></li>
+      <li><RouterLink to="/destinations/eastern-province" class="block px-4 py-2 hover:bg-green-200">East</RouterLink></li>
+    </ul>
+  </li>
+
+  <li>
+    <RouterLink to="/maps" class="nav-link hover:text-yellow-300 hover:bg-green-600/50 px-3 py-2 rounded-lg transition">
+      Maps
+    </RouterLink>
+  </li>
+
+  <li>
+    <RouterLink to="/contact" class="nav-link hover:text-yellow-300 hover:bg-green-600/50 px-3 py-2 rounded-lg transition">
+      Contact
+    </RouterLink>
+  </li>
+
+</ul>
+
+  <div class="flex items-center gap-3">
+    <RouterLink to="/login" class="hidden rounded-full px-6 py-2 text-sm font-bold uppercase tracking-widest text-green-700 border-2 border-white hover:bg-white/10 transition md:inline-flex">
+      Login
+    </RouterLink>
+
+    <RouterLink to="/signup" class="rounded-full px-6 py-2 text-sm font-bold uppercase tracking-widest bg-white text-green-700 hover:bg-yellow-50 transition shadow-lg">
+      Sign Up
+    </RouterLink>
   </div>
-</nav>
-</template>
+</div>
+  </nav>
+</template>  
