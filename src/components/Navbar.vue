@@ -1,12 +1,13 @@
 <template>
-  <nav class="sticky top-0 z-50 border-b border-white/20 bg-green-700 shadow-lg">
-    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 py-4">
-  <a href="#" class="flex items-center gap-3">
-    <img src="../assets/images/logos.png" alt="Tembera logo" class="h-14 w-14 rounded-full object-cover" />
-    <div>
-      <h1 class="text-lg font-bold text-white">Rwanda Travel</h1>
-    </div>
-  </a>
+  <nav class="sticky top-0 z-50 border-b border-emerald-800/20 bg-emerald-900/95 shadow-xl shadow-emerald-950/20 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-3 md:px-6">
+      <a href="#" class="flex items-center gap-3 rounded-full bg-white/10 px-3 py-2">
+        <img src="../assets/images/logos.png" alt="Tembera logo" class="h-12 w-12 rounded-full object-cover ring-2 ring-white/30" />
+        <div>
+          <h1 class="text-base font-black uppercase tracking-[0.25em] text-white md:text-lg">Rwanda Travel</h1>
+          <p class="text-[11px] text-emerald-100">Discover simple, beautiful journeys</p>
+        </div>
+      </a>
 
   <ul class="flex items-center gap-12 text-sm font-bold uppercase tracking-widest text-white">
 

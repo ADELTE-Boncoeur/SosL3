@@ -102,15 +102,16 @@ const handleSignUp = () => {
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 60px);
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ecfdf5 0%, #dbeafe 100%);
   padding: 20px;
 }
 
 .signup-card {
-  background: white;
+  background: rgba(255,255,255,0.96);
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(6, 95, 70, 0.18);
+  border: 1px solid #bbf7d0;
   width: 100%;
   max-width: 450px;
 }
@@ -143,7 +144,7 @@ h1 {
 
 .form-group input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #047857;
 }
 
 .terms-check {
@@ -164,7 +165,7 @@ h1 {
 .signup-btn {
   width: 100%;
   padding: 12px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #047857 0%, #15803d 100%);
   color: white;
   border: none;
   border-radius: 5px;
@@ -185,13 +186,13 @@ h1 {
 }
 
 .login-link a {
-  color: #667eea;
+  color: #047857;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
 }
 
 .login-link a:hover {
-  color: #764ba2;
+  color: #166534;
 }
 </style>
