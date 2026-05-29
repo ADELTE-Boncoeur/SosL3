@@ -2,7 +2,7 @@
   <section class="relative min-h-screen overflow-hidden text-white">
 
     <!-- ================= BACKGROUND IMAGE ================= -->
-    <div class="absolute inset-0 bg-[url('src/assets/images/background1.jpg')] bg-cover bg-center scale-110"></div>
+    <div class="absolute inset-0 bg-[url('src/assets/images/background2.jpg')] bg-cover bg-center scale-110"></div>
 
     <!-- ================= RWANDA COLOR GRADIENT OVERLAY ================= -->
     <div class="absolute inset-0 bg-gradient-to-r from-green-900/90 via-yellow-600/30 to-blue-900/90"></div>
