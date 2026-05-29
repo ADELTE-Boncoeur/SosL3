@@ -1,7 +1,7 @@
 <template>
   <nav class="sticky top-0 z-50 border-b border-emerald-800/20 bg-emerald-900/95 shadow-xl shadow-emerald-950/20 backdrop-blur">
-    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-3 md:px-6">
-      <a href="#" class="flex items-center gap-3 rounded-full bg-white/10 px-3 py-2">
+    <div class="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-4 py-3 md:flex-row md:px-6">
+      <a href="#" class="flex items-center gap-3 rounded-full bg-white/10 px-3 py-2 md:mr-6">
         <img src="../assets/images/logos.png" alt="Tembera logo" class="h-12 w-12 rounded-full object-cover ring-2 ring-white/30" />
         <div>
           <h1 class="text-base font-black uppercase tracking-[0.25em] text-white md:text-lg">Rwanda Travel</h1>
@@ -9,7 +9,7 @@
         </div>
       </a>
 
-  <ul class="flex items-center gap-12 text-sm font-bold uppercase tracking-widest text-white">
+  <ul class="flex flex-wrap items-center justify-center gap-4 text-sm font-bold uppercase tracking-widest text-white md:gap-8 lg:gap-12">
 
   <li>
     <RouterLink to="/" class="nav-link hover:text-yellow-300 hover:bg-green-600/50 px-3 py-2 rounded-lg transition">
@@ -60,16 +60,6 @@
   </li>
 
 </ul>
-
-  <div class="flex items-center gap-3">
-    <RouterLink to="/login" class="hidden rounded-full px-6 py-2 text-sm font-bold uppercase tracking-widest text-green-700 border-2 border-white hover:bg-white/10 transition md:inline-flex">
-      Login
-    </RouterLink>
-
-    <RouterLink to="/signup" class="rounded-full px-6 py-2 text-sm font-bold uppercase tracking-widest bg-white text-green-700 hover:bg-yellow-50 transition shadow-lg">
-      Sign Up
-    </RouterLink>
-  </div>
 </div>
   </nav>
 </template>  
