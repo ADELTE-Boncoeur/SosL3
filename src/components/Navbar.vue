@@ -82,4 +82,11 @@
       </div>
     </div>
   </nav>
-</template>  
+</template>
+
+<script setup>
+import { useI18n } from '@/composables/useI18n'
+
+const { locale, availableLocales, t, setLocale } = useI18n()
+</script>
+
