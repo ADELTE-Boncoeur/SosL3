@@ -61,19 +61,6 @@
         </div>
 
       </div>
-
-      <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-8"></div>
-
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-xs uppercase tracking-[0.2em] text-emerald-100/60">
-          ©2026 Tembera Urwanda. All rights reserved.
-        </p>
-
-        <p class="text-xs text-emerald-100/40">
-          Crafted with 💚 for Rwanda
-        </p>
-      </div>
-
     </div>
 
   </footer>

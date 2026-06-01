@@ -40,6 +40,26 @@
     </div>
   </section>
 
+  <section class="bg-white py-20 text-slate-900">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center mb-12">
+        <p class="text-sm uppercase tracking-[0.35em] text-emerald-500">Western Province gallery</p>
+        <h2 class="mt-4 text-4xl font-black">Lake Kivu and Nyungwe rainforest imagery</h2>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="rounded-[32px] overflow-hidden shadow-2xl border border-slate-200 bg-slate-50">
+          <img src="@/assets/images/west.jpg" alt="Western Province lake view" class="h-72 w-full object-cover" />
+        </div>
+        <div class="rounded-[32px] overflow-hidden shadow-2xl border border-slate-200 bg-slate-50">
+          <img src="@/assets/images/rwandans.jpg" alt="Forest walk" class="h-72 w-full object-cover" />
+        </div>
+        <div class="rounded-[32px] overflow-hidden shadow-2xl border border-slate-200 bg-slate-50">
+          <img src="@/assets/images/vision.jpg" alt="Lake Kivu retreat" class="h-72 w-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="bg-slate-100 py-16 text-slate-900">
     <div class="mx-auto max-w-7xl px-6">
       <div class="grid gap-8 lg:grid-cols-[0.9fr_0.55fr]">

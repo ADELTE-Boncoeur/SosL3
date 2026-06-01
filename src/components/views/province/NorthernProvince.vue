@@ -40,6 +40,26 @@
     </div>
   </section>
 
+  <section class="py-20 bg-slate-900 text-white">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center mb-12">
+        <p class="text-sm uppercase tracking-[0.35em] text-emerald-300">Northern Province photo story</p>
+        <h2 class="mt-4 text-4xl font-black">Gorilla country in focused photographic scenes</h2>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="rounded-[32px] overflow-hidden shadow-2xl border border-white/10 bg-slate-950/50">
+          <img src="@/assets/images/musanze.jpg" alt="Musanze mountain" class="h-72 w-full object-cover" />
+        </div>
+        <div class="rounded-[32px] overflow-hidden shadow-2xl border border-white/10 bg-slate-950/50">
+          <img src="@/assets/images/north.jpg" alt="Northern Province volcano" class="h-72 w-full object-cover" />
+        </div>
+        <div class="rounded-[32px] overflow-hidden shadow-2xl border border-white/10 bg-slate-950/50">
+          <img src="@/assets/images/rwandans.jpg" alt="Northern Province nature" class="h-72 w-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="bg-slate-100 py-16 text-slate-900">
     <div class="mx-auto max-w-7xl px-6">
       <div class="grid gap-8 lg:grid-cols-[0.9fr_0.55fr]">

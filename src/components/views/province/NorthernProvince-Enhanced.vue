@@ -43,6 +43,26 @@
     </div>
   </section>
 
+  <section class="py-20 bg-slate-900 text-white">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center mb-12">
+        <p class="text-sm uppercase tracking-[0.35em] text-emerald-300">Northern visuals</p>
+        <h2 class="mt-4 text-4xl font-black">Mountain lodges, mist and waterfalls</h2>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="rounded-[32px] overflow-hidden shadow-2xl border border-white/10 bg-slate-950/50">
+          <img src="@/assets/images/musanze.jpg" alt="Musanze landscape" class="h-72 w-full object-cover" />
+        </div>
+        <div class="rounded-[32px] overflow-hidden shadow-2xl border border-white/10 bg-slate-950/50">
+          <img src="@/assets/images/north.jpg" alt="Northern Province volcano" class="h-72 w-full object-cover" />
+        </div>
+        <div class="rounded-[32px] overflow-hidden shadow-2xl border border-white/10 bg-slate-950/50">
+          <img src="@/assets/images/ourhistory.jpg" alt="Northern Province scenery" class="h-72 w-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ======================== IMMERSIVE EXPERIENCE SECTION ======================== -->
   <section class="relative bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 py-24 px-4 text-white overflow-hidden">
     <div class="absolute inset-0 pointer-events-none">

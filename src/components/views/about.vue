@@ -1,110 +1,148 @@
 <template>
-  <section class="relative min-h-screen overflow-hidden text-white">
-    <div class="absolute inset-0 bg-[url('@/assets/images/background2.jpg')] bg-cover bg-center opacity-80"></div>
-    <div class="absolute inset-0 bg-gradient-to-br from-slate-950/80 via-slate-900/40 to-emerald-900/70"></div>
+  <section class="relative overflow-hidden text-white">
+    <img :src="heroImage" alt="Rwanda aerial view" class="absolute inset-0 h-full w-full object-cover opacity-70" />
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-slate-900/40 to-emerald-950/80"></div>
 
-    <div class="relative z-10 flex min-h-screen flex-col justify-center px-6 py-16 lg:px-10">
-      <div class="mb-8 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.35em] text-white/80 backdrop-blur-xl shadow-xl">
-        <span class="rounded-full bg-emerald-500/20 px-2 py-1">Enterprise</span>
-        Rwanda Smart Tourism Ecosystem
-      </div>
+    <div class="relative z-10 mx-auto max-w-7xl px-6 py-24 lg:px-10">
+      <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+        <div>
+          <p class="text-sm uppercase tracking-[0.35em] text-emerald-300">About Rwanda Luxury Travel</p>
+          <h1 class="mt-6 text-5xl font-black tracking-tight sm:text-6xl">Crafting the premium Rwanda travel story with vision and authenticity.</h1>
+          <p class="mt-6 max-w-3xl text-lg text-slate-200/90 sm:text-xl">Tembera Urwanda blends smart tourism, destination storytelling and cultural respect to create a modern platform for luxury guests, investors and travel partners.</p>
 
-      <div class="grid gap-12 lg:grid-cols-[1.05fr_0.95fr]">
-        <div class="space-y-6 text-center lg:text-left">
-          <p class="text-sm uppercase tracking-[0.35em] text-emerald-300">About Tembera Urwanda</p>
-          <h1 class="text-5xl md:text-7xl font-black tracking-tight">A next-generation luxury tourism platform for Rwanda.</h1>
-          <p class="max-w-3xl text-lg text-white/75 md:text-xl">From AI-powered itineraries to analytics, smart booking, cultural guides and immersive destination dashboards — this site combines the feel of global travel leaders with Rwanda’s unique premium experiences.</p>
-
-          <div class="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
-            <RouterLink to="/smart-search" class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-emerald-400 via-yellow-300 to-cyan-400 px-8 py-3 text-sm font-black text-slate-950 shadow-xl transition hover:scale-105">
-              Explore AI search
-            </RouterLink>
-            <RouterLink to="/analytics" class="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-3 text-sm font-black text-white transition hover:bg-white/20">
-              View insights
-            </RouterLink>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <router-link to="/destinations" class="inline-flex items-center justify-center rounded-full bg-emerald-400 px-8 py-3 text-sm font-black text-slate-950 transition hover:scale-105">
+              Explore destinations
+            </router-link>
+            <a href="#values" class="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-3 text-sm font-black text-white transition hover:bg-white/20">
+              Read our values
+            </a>
           </div>
         </div>
 
-        <div class="rounded-[32px] border border-white/10 bg-white/10 p-6 backdrop-blur-xl shadow-2xl shadow-black/30">
-          <div class="grid gap-4 sm:grid-cols-2">
-            <div class="rounded-3xl bg-slate-950/40 p-5">
-              <p class="text-sm uppercase tracking-[0.25em] text-slate-300">Premium visitors</p>
-              <p class="mt-3 text-3xl font-black text-white">432K+</p>
-            </div>
-            <div class="rounded-3xl bg-slate-950/40 p-5">
-              <p class="text-sm uppercase tracking-[0.25em] text-slate-300">Booking growth</p>
-              <p class="mt-3 text-3xl font-black text-white">+18%</p>
-            </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="rounded-[32px] border border-white/10 bg-white/10 p-6 backdrop-blur-xl shadow-2xl">
+            <p class="text-xs uppercase tracking-[0.35em] text-slate-300">Experience</p>
+            <h2 class="mt-4 text-4xl font-black">15+</h2>
+            <p class="mt-3 text-slate-200">Luxury travel concepts and destination designs curated for Rwanda.</p>
           </div>
-          <div class="mt-6 rounded-3xl bg-slate-900/50 p-5">
-            <h2 class="text-xl font-bold text-white">AI itinerary planner</h2>
-            <p class="mt-3 text-slate-300">Generate a full travel plan with hotels, activities, restaurants, budgets and dates in seconds.</p>
+          <div class="rounded-[32px] border border-white/10 bg-white/10 p-6 backdrop-blur-xl shadow-2xl">
+            <p class="text-xs uppercase tracking-[0.35em] text-slate-300">Focus</p>
+            <h2 class="mt-4 text-4xl font-black">Sustainable</h2>
+            <p class="mt-3 text-slate-200">Responsible tourism, culture-led hospitality and exceptional guest journeys.</p>
           </div>
+          <div class="rounded-[32px] border border-white/10 bg-white/10 p-6 backdrop-blur-xl shadow-2xl">
+            <p class="text-xs uppercase tracking-[0.35em] text-slate-300">Design</p>
+            <h2 class="mt-4 text-4xl font-black">Bespoke</h2>
+            <p class="mt-3 text-slate-200">Curated brand experiences with photography, motion, and rich content at every touchpoint.</p>
+          </div>
+          <div class="rounded-[32px] border border-white/10 bg-white/10 p-6 backdrop-blur-xl shadow-2xl">
+            <p class="text-xs uppercase tracking-[0.35em] text-slate-300">Culture</p>
+            <h2 class="mt-4 text-4xl font-black">Authentic</h2>
+            <p class="mt-3 text-slate-200">Local stories, heritage rituals and people-first narratives throughout the platform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-950 py-20 px-6 text-white" id="values">
+    <div class="mx-auto max-w-6xl">
+      <div class="text-center">
+        <p class="text-sm uppercase tracking-[0.35em] text-emerald-400">Our purpose</p>
+        <h2 class="mt-4 text-4xl font-black">Why Tembera Urwanda exists</h2>
+        <p class="mt-4 max-w-2xl mx-auto text-slate-300">We create a compelling luxury tourism experience for Rwanda with clear storytelling, immersive photography, and seamless access to each region’s finest attractions.</p>
+      </div>
+
+      <div class="mt-16 grid gap-6 md:grid-cols-3">
+        <article class="rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-2xl">
+          <h3 class="text-xl font-bold text-emerald-300">Showcase Rwanda</h3>
+          <p class="mt-4 text-slate-200">Highlight premium destinations, cultural experiences, and modern hospitality with a polished visual language.</p>
+        </article>
+        <article class="rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-2xl">
+          <h3 class="text-xl font-bold text-yellow-300">Inspire travel</h3>
+          <p class="mt-4 text-slate-200">Turn curiosity into high-value trips through beautiful storytelling, destination insights, and local imagery.</p>
+        </article>
+        <article class="rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-2xl">
+          <h3 class="text-xl font-bold text-sky-300">Build trust</h3>
+          <p class="mt-4 text-slate-200">Provide a professional platform for partners, guests and decision makers to explore Rwanda’s tourism potential.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-6 text-slate-900">
+    <div class="mx-auto max-w-6xl grid gap-12 lg:grid-cols-[0.65fr_0.35fr]">
+      <div class="space-y-10 rounded-[32px] border border-slate-200 bg-white p-10 shadow-2xl">
+        <div class="space-y-4">
+          <p class="text-sm uppercase tracking-[0.35em] text-emerald-500">Our story</p>
+          <h2 class="text-4xl font-black">A modern tourism platform with deep local roots</h2>
+        </div>
+        <p class="text-slate-600 leading-8">Tembera Urwanda brings together Rwanda’s strength in innovation, sustainability and hospitality. The platform is designed to reflect the country’s dynamic cities, rainforest escapes, volcano treks and lakeside luxury while giving travelers an intuitive path to explore and book.</p>
+        <p class="text-slate-600 leading-8">Every section is built to tell a richer story—whether through curated photo galleries, destination summaries, or intelligent trip guidance. The goal is to make Rwanda feel both aspirational and accessible without losing the authenticity of local culture.</p>
+      </div>
+
+      <div class="grid gap-6">
+        <div class="rounded-[32px] overflow-hidden shadow-2xl">
+          <img :src="storyImageA" alt="Rwanda heritage" class="h-80 w-full object-cover" />
+        </div>
+        <div class="rounded-[32px] overflow-hidden shadow-2xl">
+          <img :src="storyImageB" alt="Rwanda landscapes" class="h-80 w-full object-cover" />
         </div>
       </div>
     </div>
   </section>
 
   <section class="bg-slate-950 py-20 px-6 text-white">
-    <div class="mx-auto max-w-6xl text-center">
-      <p class="text-sm uppercase tracking-[0.35em] text-emerald-400">Platform features</p>
-      <h2 class="mt-4 text-4xl font-black">Luxury travel features for every touring experience</h2>
-      <p class="mt-4 max-w-3xl mx-auto text-white/70">Interactive dashboards, virtual tours, weather guides, community stories and smart analytics bring every traveler and operator together.</p>
-    </div>
-
-    <div class="mx-auto mt-16 grid gap-6 md:grid-cols-3">
-      <article class="rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-2xl transition hover:-translate-y-1">
-        <h3 class="text-xl font-bold text-emerald-300">Smart analytics</h3>
-        <p class="mt-3 text-white/70">Live visitor counters, province rankings, monthly growth charts and revenue projections.</p>
-      </article>
-      <article class="rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-2xl transition hover:-translate-y-1">
-        <h3 class="text-xl font-bold text-yellow-300">AI travel assistant</h3>
-        <p class="mt-3 text-white/70">Personalized recommendations, trip planning, budgets and date suggestions for every type of traveler.</p>
-      </article>
-      <article class="rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-2xl transition hover:-translate-y-1">
-        <h3 class="text-xl font-bold text-sky-300">Community hub</h3>
-        <p class="mt-3 text-white/70">Travel stories, reviews, user photos and tourism discussions to inspire every visit.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="py-20 px-6 text-slate-900">
     <div class="mx-auto max-w-6xl">
-      <div class="grid gap-6 lg:grid-cols-[0.7fr_0.3fr]">
-        <div class="rounded-[32px] border border-slate-200 bg-white p-8 shadow-2xl">
-          <h2 class="text-3xl font-black text-slate-900">Why Tembera Urwanda?</h2>
-          <p class="mt-4 text-slate-600">This platform brings Rwanda’s premium tourism ecosystem into a modern, enterprise-grade experience with every page, dashboard and booking workflow improved for international and local travelers alike.</p>
-          <div class="mt-8 grid gap-4">
-            <div class="rounded-3xl bg-slate-50 p-5">
-              <p class="font-semibold text-slate-900">Luxury glassmorphism UI</p>
-              <p class="mt-2 text-slate-600">Premium cards, gradients, particle style effects and advanced motion.</p>
-            </div>
-            <div class="rounded-3xl bg-slate-50 p-5">
-              <p class="font-semibold text-slate-900">Real-time insights</p>
-              <p class="mt-2 text-slate-600">Analytics, visitor trends and destination performance in one dashboard.</p>
-            </div>
-            <div class="rounded-3xl bg-slate-50 p-5">
-              <p class="font-semibold text-slate-900">Travel intelligence</p>
-              <p class="mt-2 text-slate-600">AI planning, predictive search and saved itineraries for premium trip design.</p>
-            </div>
-          </div>
+      <div class="grid gap-6 lg:grid-cols-3">
+        <div class="rounded-[32px] bg-white/5 p-8 shadow-2xl">
+          <p class="text-sm uppercase tracking-[0.35em] text-emerald-300">What we deliver</p>
+          <h3 class="mt-4 text-3xl font-black">Complete tourism storytelling</h3>
+          <p class="mt-4 text-slate-300">Visual direction, destination copy, immersive imagery, and premium interaction design for every traveler.</p>
         </div>
-
-        <div class="rounded-[32px] border border-slate-200 bg-gradient-to-br from-emerald-500 to-cyan-500 p-8 text-white shadow-2xl">
-          <h2 class="text-3xl font-black">Interactive tourism hub</h2>
-          <p class="mt-4 text-white/80">Every traveler gets rich, content-led guidance with accessible tools for weather, safety, culture and events.</p>
-          <div class="mt-8 grid gap-4">
-            <div class="rounded-3xl bg-white/10 p-5">
-              <p class="font-semibold">360° virtual tours</p>
-              <p class="mt-2 text-sm text-white/75">Kigali, Akagera, Volcanoes, Nyungwe and Lake Kivu experiences.</p>
-            </div>
-            <div class="rounded-3xl bg-white/10 p-5">
-              <p class="font-semibold">Accessibility and translation</p>
-              <p class="mt-2 text-sm text-white/75">Keyboard navigation, high contrast, large text and multi-language support.</p>
-            </div>
-          </div>
+        <div class="rounded-[32px] bg-white/5 p-8 shadow-2xl">
+          <h3 class="text-2xl font-bold text-white">Destination photography</h3>
+          <p class="mt-4 text-slate-300">A curated suite of visuals for Kigali, national parks, tea hills, waterfalls, and cultural moments.</p>
+        </div>
+        <div class="rounded-[32px] bg-white/5 p-8 shadow-2xl">
+          <h3 class="text-2xl font-bold text-white">Premium user journeys</h3>
+          <p class="mt-4 text-slate-300">From browsing destinations to planning itineraries and viewing partner opportunities, every experience feels deliberate.</p>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="py-20 px-6 text-slate-900">
+    <div class="mx-auto max-w-6xl text-center">
+      <p class="text-sm uppercase tracking-[0.35em] text-emerald-500">Photo showcase</p>
+      <h2 class="mt-4 text-4xl font-black">Visual moments from Rwanda</h2>
+      <p class="mt-4 max-w-3xl mx-auto text-slate-600">A gallery of inviting landscapes, city life and cultural connection helps guests imagine the next premium trip.</p>
+    </div>
+
+    <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="overflow-hidden rounded-[28px] shadow-2xl">
+        <img :src="galleryA" alt="Rwanda city scene" class="h-72 w-full object-cover" />
+      </div>
+      <div class="overflow-hidden rounded-[28px] shadow-2xl">
+        <img :src="galleryB" alt="Rwanda nature" class="h-72 w-full object-cover" />
+      </div>
+      <div class="overflow-hidden rounded-[28px] shadow-2xl">
+        <img :src="galleryC" alt="Rwanda culture" class="h-72 w-full object-cover" />
+      </div>
+      <div class="overflow-hidden rounded-[28px] shadow-2xl">
+        <img :src="galleryD" alt="Rwanda tourism" class="h-72 w-full object-cover" />
+      </div>
+    </div>
+  </section>
 </template>
+
+<script setup>
+const heroImage = new URL('../../assets/images/background1.jpg', import.meta.url).href
+const storyImageA = new URL('../../assets/images/president.jpg', import.meta.url).href
+const storyImageB = new URL('../../assets/images/tea plantation.jpg', import.meta.url).href
+const galleryA = new URL('../../assets/images/kigali.jpg', import.meta.url).href
+const galleryB = new URL('../../assets/images/eastern.jpg', import.meta.url).href
+const galleryC = new URL('../../assets/images/rwandans.jpg', import.meta.url).href
+const galleryD = new URL('../../assets/images/west.jpg', import.meta.url).href
+</script>

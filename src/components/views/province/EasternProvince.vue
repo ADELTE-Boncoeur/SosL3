@@ -44,6 +44,26 @@
     </div>
   </section>
 
+  <section class="bg-slate-950 py-20 text-white">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center mb-12">
+        <p class="text-sm uppercase tracking-[0.35em] text-emerald-300">Eastern Province images</p>
+        <h2 class="mt-4 text-4xl font-black">Safari scenes and tea hill panoramas</h2>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="rounded-[32px] overflow-hidden shadow-2xl border border-white/10 bg-slate-900/60">
+          <img src="@/assets/images/eastern.jpg" alt="Eastern Province safari" class="h-72 w-full object-cover" />
+        </div>
+        <div class="rounded-[32px] overflow-hidden shadow-2xl border border-white/10 bg-slate-900/60">
+          <img src="@/assets/images/east3.jpg" alt="Eastern Province landscape" class="h-72 w-full object-cover" />
+        </div>
+        <div class="rounded-[32px] overflow-hidden shadow-2xl border border-white/10 bg-slate-900/60">
+          <img src="@/assets/images/tea plantation.jpg" alt="Tea plantation in the east" class="h-72 w-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- DATA GRID SECTION -->
   <section class="bg-slate-50 py-20 text-slate-900">
     <div class="mx-auto max-w-7xl px-6">

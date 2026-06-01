@@ -54,17 +54,7 @@ onMounted(() => {
 
   <Footer />
 
-  <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-    <a href="https://wa.me/250722635461" target="_blank" rel="noreferrer" class="flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500 text-white shadow-2xl shadow-emerald-500/30 transition hover:-translate-y-1" aria-label="WhatsApp chat">
-      <span>WA</span>
-    </a>
-    <a href="tel:+250722635461" class="flex h-14 w-14 items-center justify-center rounded-full bg-sky-500 text-white shadow-2xl shadow-sky-500/30 transition hover:-translate-y-1" aria-label="Call support">
-      <span>Call</span>
-    </a>
-    <button class="flex h-14 w-14 items-center justify-center rounded-full bg-violet-500 text-white shadow-2xl shadow-violet-500/30 transition hover:-translate-y-1" aria-label="Open chatbot">
-      <span>AI</span>
-    </button>
-  </div>
+ 
 </template>
 
 <style>
