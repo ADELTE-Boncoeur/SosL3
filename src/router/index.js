@@ -4,8 +4,6 @@ import Home from "../components/Home.vue"
 import About from "../components/views/about.vue"
 import Gallery from "../components/views/Gallery.vue"
 import Destinations from "../components/views/Destinations.vue"
-import Maps from "../components/views/Maps.vue"
-import Contact from "../components/views/Contact.vue"
 import KigaliCity from "../components/views/province/KigaliCity.vue"
 import SouthernProvince from "../components/views/province/SouthernProvince.vue"
 import WesternProvince from "../components/views/province/WesternProvince.vue"
@@ -57,17 +55,7 @@ const routes = [
     path: '/destinations/eastern-province',
     name: 'EasternProvince',
     component: EasternProvince
-  },
-  {
-    path: '/maps',
-    name: 'Maps',
-    component: Maps
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: Contact
-  },
+  }
 ]
 
 const router = createRouter({
