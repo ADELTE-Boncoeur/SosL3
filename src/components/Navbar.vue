@@ -39,8 +39,15 @@
               Gallery
               <span class="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-emerald-300 to-cyan-300 rounded-full group-hover:w-full transition-all duration-300"></span>
             </RouterLink>
-          </li>
-          
+          </li>          <li>
+            <RouterLink 
+              to="/contact" 
+              class="nav-link relative px-3 py-2 rounded-lg transition-all duration-300 hover:text-yellow-300 hover:bg-emerald-700/50 group"
+            >
+              {{ t('contact') }}
+              <span class="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-emerald-300 to-cyan-300 rounded-full group-hover:w-full transition-all duration-300"></span>
+            </RouterLink>
+          </li>          
           <!-- Destinations dropdown with premium styling -->
           <li class="relative group">
             <button class="nav-link relative px-3 py-2 rounded-lg transition-all duration-300 hover:text-yellow-300 hover:bg-emerald-700/50 flex items-center gap-1">

@@ -9,6 +9,7 @@ import SouthernProvince from "../components/views/province/SouthernProvince.vue"
 import WesternProvince from "../components/views/province/WesternProvince.vue"
 import NorthernProvince from "../components/views/province/NorthernProvince.vue"
 import EasternProvince from "../components/views/province/EasternProvince.vue"
+import Contact from "../components/views/Contact.vue"
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     path: '/gallery',
     name: 'Gallery',
     component: Gallery
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
   },
   {
     path: '/destinations',
